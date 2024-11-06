@@ -1,0 +1,423 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B40D5F1F2CDB2ECB00438CD7 /* TSVBPackage in Frameworks */ = {isa = PBXBuildFile; productRef = B40D5F1E2CDB2ECB00438CD7 /* TSVBPackage */; };
+		B40D5F212CDB357300438CD7 /* TSVBPackage in Frameworks */ = {isa = PBXBuildFile; productRef = B40D5F202CDB357300438CD7 /* TSVBPackage */; };
+		B49089092CDB088800679714 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49089082CDB088800679714 /* AppDelegate.swift */; };
+		B490890B2CDB088800679714 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B490890A2CDB088800679714 /* SceneDelegate.swift */; };
+		B490890D2CDB088800679714 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B490890C2CDB088800679714 /* ViewController.swift */; };
+		B49089102CDB088800679714 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B490890E2CDB088800679714 /* Main.storyboard */; };
+		B49089122CDB088A00679714 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B49089112CDB088A00679714 /* Assets.xcassets */; };
+		B49089152CDB088A00679714 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B49089132CDB088A00679714 /* LaunchScreen.storyboard */; };
+		B49089252CDB0E0300679714 /* Metrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49089242CDB0E0300679714 /* Metrics.swift */; };
+		B49089272CDB140F00679714 /* SimpleCameraCapturer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49089262CDB140F00679714 /* SimpleCameraCapturer.swift */; };
+		B49089292CDB144D00679714 /* FrameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49089282CDB144D00679714 /* FrameView.swift */; };
+		B49089342CDB26A200679714 /* background_image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B49089332CDB26A200679714 /* background_image.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B49089052CDB088800679714 /* TomskSoft SDK Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TomskSoft SDK Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B49089082CDB088800679714 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B490890A2CDB088800679714 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B490890C2CDB088800679714 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B490890F2CDB088800679714 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B49089112CDB088A00679714 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B49089142CDB088A00679714 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B49089162CDB088A00679714 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B49089242CDB0E0300679714 /* Metrics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Metrics.swift; sourceTree = "<group>"; };
+		B49089262CDB140F00679714 /* SimpleCameraCapturer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCameraCapturer.swift; sourceTree = "<group>"; };
+		B49089282CDB144D00679714 /* FrameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrameView.swift; sourceTree = "<group>"; };
+		B49089332CDB26A200679714 /* background_image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background_image.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B49089022CDB088800679714 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B40D5F212CDB357300438CD7 /* TSVBPackage in Frameworks */,
+				B40D5F1F2CDB2ECB00438CD7 /* TSVBPackage in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B49088FC2CDB088800679714 = {
+			isa = PBXGroup;
+			children = (
+				B49089072CDB088800679714 /* TomskSoft SDK Demo */,
+				B49089062CDB088800679714 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B49089062CDB088800679714 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B49089052CDB088800679714 /* TomskSoft SDK Demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B49089072CDB088800679714 /* TomskSoft SDK Demo */ = {
+			isa = PBXGroup;
+			children = (
+				B49089332CDB26A200679714 /* background_image.jpg */,
+				B49089282CDB144D00679714 /* FrameView.swift */,
+				B49089262CDB140F00679714 /* SimpleCameraCapturer.swift */,
+				B49089242CDB0E0300679714 /* Metrics.swift */,
+				B49089082CDB088800679714 /* AppDelegate.swift */,
+				B490890A2CDB088800679714 /* SceneDelegate.swift */,
+				B490890C2CDB088800679714 /* ViewController.swift */,
+				B490890E2CDB088800679714 /* Main.storyboard */,
+				B49089112CDB088A00679714 /* Assets.xcassets */,
+				B49089132CDB088A00679714 /* LaunchScreen.storyboard */,
+				B49089162CDB088A00679714 /* Info.plist */,
+			);
+			path = "TomskSoftSDKDemo";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B49089042CDB088800679714 /* TomskSoft SDK Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B49089192CDB088A00679714 /* Build configuration list for PBXNativeTarget "TomskSoft SDK Demo" */;
+			buildPhases = (
+				B49089012CDB088800679714 /* Sources */,
+				B49089022CDB088800679714 /* Frameworks */,
+				B49089032CDB088800679714 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TomskSoft SDK Demo";
+			packageProductDependencies = (
+				B40D5F1E2CDB2ECB00438CD7 /* TSVBPackage */,
+				B40D5F202CDB357300438CD7 /* TSVBPackage */,
+			);
+			productName = "TomskSoft SDK Demo";
+			productReference = B49089052CDB088800679714 /* TomskSoft SDK Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B49088FD2CDB088800679714 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					B49089042CDB088800679714 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = B49089002CDB088800679714 /* Build configuration list for PBXProject "TomskSoft SDK Demo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B49088FC2CDB088800679714;
+			packageReferences = (
+				B40D5F1D2CDB2ECB00438CD7 /* XCRemoteSwiftPackageReference "swift-video-effects-sdk" */,
+			);
+			productRefGroup = B49089062CDB088800679714 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B49089042CDB088800679714 /* TomskSoft SDK Demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B49089032CDB088800679714 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B49089152CDB088A00679714 /* LaunchScreen.storyboard in Resources */,
+				B49089342CDB26A200679714 /* background_image.jpg in Resources */,
+				B49089122CDB088A00679714 /* Assets.xcassets in Resources */,
+				B49089102CDB088800679714 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B49089012CDB088800679714 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B49089292CDB144D00679714 /* FrameView.swift in Sources */,
+				B490890D2CDB088800679714 /* ViewController.swift in Sources */,
+				B49089092CDB088800679714 /* AppDelegate.swift in Sources */,
+				B49089272CDB140F00679714 /* SimpleCameraCapturer.swift in Sources */,
+				B490890B2CDB088800679714 /* SceneDelegate.swift in Sources */,
+				B49089252CDB0E0300679714 /* Metrics.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B490890E2CDB088800679714 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B490890F2CDB088800679714 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B49089132CDB088A00679714 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B49089142CDB088A00679714 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B49089172CDB088A00679714 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B49089182CDB088A00679714 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B490891A2CDB088A00679714 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SJGS55JN43;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "TomskSoftSDKDemo/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "TomskSoft SDK Demo";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Captures cameras to show functionality of SDK";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tomsksoft.SDK-Demo-Swift.iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B490891B2CDB088A00679714 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SJGS55JN43;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "TomskSoftSDKDemo/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "TomskSoft SDK Demo";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Captures cameras to show functionality of SDK";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tomsksoft.SDK-Demo-Swift.iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B49089002CDB088800679714 /* Build configuration list for PBXProject "TomskSoft SDK Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B49089172CDB088A00679714 /* Debug */,
+				B49089182CDB088A00679714 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B49089192CDB088A00679714 /* Build configuration list for PBXNativeTarget "TomskSoft SDK Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B490891A2CDB088A00679714 /* Debug */,
+				B490891B2CDB088A00679714 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B40D5F1D2CDB2ECB00438CD7 /* XCRemoteSwiftPackageReference "swift-video-effects-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/EffectsSDK/swift-video-effects-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B40D5F1E2CDB2ECB00438CD7 /* TSVBPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B40D5F1D2CDB2ECB00438CD7 /* XCRemoteSwiftPackageReference "swift-video-effects-sdk" */;
+			productName = TSVBPackage;
+		};
+		B40D5F202CDB357300438CD7 /* TSVBPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B40D5F1D2CDB2ECB00438CD7 /* XCRemoteSwiftPackageReference "swift-video-effects-sdk" */;
+			productName = TSVBPackage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = B49088FD2CDB088800679714 /* Project object */;
+}
