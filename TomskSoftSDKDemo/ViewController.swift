@@ -66,6 +66,10 @@ class ViewController: UIViewController {
 		title: "Sharpening",
 		onTouchHandler: #selector(toggleSharpening)
 	)
+	lazy var neuralEngineButton = makeFeatureButton(
+		title: "Neural Engine",
+		onTouchHandler: #selector(toggleNeuralEngine)
+	)
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -101,6 +105,12 @@ class ViewController: UIViewController {
 		pipeline = sdkFactory.newPipeline()
 		frameFactory = sdkFactory.newFrameFactory()
 		
+		let pipelineConfig = pipeline?.copyConfiguration()
+		pipelineConfig?.segmentationPreset = .quality
+		pipeline?.setConfiguration(pipelineConfig!)
+		
+		setFeatureEnabledButtonState(self.neuralEngineButton, enabled: pipelineConfig!.isSegmentationOnNeuralEngineEnabled);
+		
 		Task {
 			await enableReplaceBackground()
 			setFeatureEnabledButtonState(replacementButton, enabled: replaceEnabled)
@@ -115,6 +125,8 @@ class ViewController: UIViewController {
 		timer = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true) {_ in
 			self.updateTimeAndFPSLabels()
 		}
+		
+		UIApplication.shared.isIdleTimerDisabled = true;
 	}
 
 	func processFrame(buffer: CMSampleBuffer) {
@@ -122,7 +134,7 @@ class ViewController: UIViewController {
 		
 		let startTime = Date()
 		let result = synchronized(pipeline!) {
-			return pipeline?.process(pixelBuffer: inputFrame, error:nil)
+			return pipeline?.process(pixelBuffer:inputFrame, metalCompatible:true, error:nil)
 		}
 		let endTime = Date()
 		let neededAddToMierics = (nil != result)
@@ -203,7 +215,8 @@ class ViewController: UIViewController {
 				guard let pipeline = self.pipeline else { return }
 				replacementButton.isEnabled = false
 				await inControlQueue {
-					synchronized(pipeline){                     pipeline.disableReplaceBackground()
+					synchronized(pipeline){
+						pipeline.disableReplaceBackground()
 					}
 				}
 				replaceEnabled = false
@@ -283,7 +296,11 @@ class ViewController: UIViewController {
 				return synchronized(pipeline) {
 					if neededEnableColorCorrection {
 						let error = pipeline.enableColorCorrection()
-						return error == .ok
+						let ok = error == .ok;
+						if (ok) {
+							pipeline.colorCorrectionPower = 0.5
+						}
+						return ok
 					}
 					
 					pipeline.disableColorCorrection()
@@ -372,6 +389,28 @@ class ViewController: UIViewController {
 			)
 		}
 	}
+	
+	@objc func toggleNeuralEngine()
+	{
+		Task {
+			guard let pipeline = self.pipeline else { return }
+			neuralEngineButton.isEnabled = false
+			let neuralEngineEnabled = await inControlQueue {
+				return synchronized(pipeline) {
+					let config = pipeline.copyConfiguration()!
+					let isEnabled = config.isSegmentationOnNeuralEngineEnabled
+					config.isSegmentationOnNeuralEngineEnabled = !isEnabled
+					pipeline.setConfiguration(config)
+					return pipeline.copyConfiguration()!.isSegmentationOnNeuralEngineEnabled
+				}
+			}
+			neuralEngineButton.isEnabled = true
+			setFeatureEnabledButtonState(
+				neuralEngineButton,
+				enabled:neuralEngineEnabled
+			)
+		}
+	}
 
 	func updateBackgroundFeatureButtons()
 	{
@@ -411,7 +450,8 @@ class ViewController: UIViewController {
 			colorCorrectionButton,
 			smartZoomButton,
 			lowLightButton,
-			sharpeningButton
+			sharpeningButton,
+			neuralEngineButton
 		]
 		
 		var width: CGFloat = 0;
