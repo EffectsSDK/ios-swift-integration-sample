@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B40D5F1F2CDB2ECB00438CD7 /* TSVBPackage in Frameworks */ = {isa = PBXBuildFile; productRef = B40D5F1E2CDB2ECB00438CD7 /* TSVBPackage */; };
-		B40D5F212CDB357300438CD7 /* TSVBPackage in Frameworks */ = {isa = PBXBuildFile; productRef = B40D5F202CDB357300438CD7 /* TSVBPackage */; };
 		B49089092CDB088800679714 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49089082CDB088800679714 /* AppDelegate.swift */; };
 		B490890B2CDB088800679714 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B490890A2CDB088800679714 /* SceneDelegate.swift */; };
 		B490890D2CDB088800679714 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B490890C2CDB088800679714 /* ViewController.swift */; };
@@ -19,10 +18,11 @@
 		B49089272CDB140F00679714 /* SimpleCameraCapturer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49089262CDB140F00679714 /* SimpleCameraCapturer.swift */; };
 		B49089292CDB144D00679714 /* FrameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49089282CDB144D00679714 /* FrameView.swift */; };
 		B49089342CDB26A200679714 /* background_image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B49089332CDB26A200679714 /* background_image.jpg */; };
+		B49089372CDB26A200679714 /* color_filter.cube in Resources */ = {isa = PBXBuildFile; fileRef = B49089362CDB26A200679714 /* color_filter.cube */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B49089052CDB088800679714 /* TomskSoft SDK Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TomskSoft SDK Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B49089052CDB088800679714 /* Video Effects SDK Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Video Effects SDK Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B49089082CDB088800679714 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B490890A2CDB088800679714 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B490890C2CDB088800679714 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -34,6 +34,7 @@
 		B49089262CDB140F00679714 /* SimpleCameraCapturer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCameraCapturer.swift; sourceTree = "<group>"; };
 		B49089282CDB144D00679714 /* FrameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrameView.swift; sourceTree = "<group>"; };
 		B49089332CDB26A200679714 /* background_image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background_image.jpg; sourceTree = "<group>"; };
+		B49089362CDB26A200679714 /* color_filter.cube */ = {isa = PBXFileReference; lastKnownFileType = text; path = color_filter.cube; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +42,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B40D5F212CDB357300438CD7 /* TSVBPackage in Frameworks */,
 				B40D5F1F2CDB2ECB00438CD7 /* TSVBPackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -52,7 +52,7 @@
 		B49088FC2CDB088800679714 = {
 			isa = PBXGroup;
 			children = (
-				B49089072CDB088800679714 /* TomskSoft SDK Demo */,
+				B49089072CDB088800679714 /* Video Effects SDK Demo */,
 				B49089062CDB088800679714 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -60,15 +60,16 @@
 		B49089062CDB088800679714 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B49089052CDB088800679714 /* TomskSoft SDK Demo.app */,
+				B49089052CDB088800679714 /* Video Effects SDK Demo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B49089072CDB088800679714 /* TomskSoft SDK Demo */ = {
+		B49089072CDB088800679714 /* Video Effects SDK Demo */ = {
 			isa = PBXGroup;
 			children = (
 				B49089332CDB26A200679714 /* background_image.jpg */,
+				B49089362CDB26A200679714 /* color_filter.cube */,
 				B49089282CDB144D00679714 /* FrameView.swift */,
 				B49089262CDB140F00679714 /* SimpleCameraCapturer.swift */,
 				B49089242CDB0E0300679714 /* Metrics.swift */,
@@ -80,15 +81,15 @@
 				B49089132CDB088A00679714 /* LaunchScreen.storyboard */,
 				B49089162CDB088A00679714 /* Info.plist */,
 			);
-			path = "TomskSoftSDKDemo";
+			path = "VideoEffectsSDKDemo";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B49089042CDB088800679714 /* TomskSoft SDK Demo */ = {
+		B49089042CDB088800679714 /* Video Effects SDK Demo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B49089192CDB088A00679714 /* Build configuration list for PBXNativeTarget "TomskSoft SDK Demo" */;
+			buildConfigurationList = B49089192CDB088A00679714 /* Build configuration list for PBXNativeTarget "Video Effects SDK Demo" */;
 			buildPhases = (
 				B49089012CDB088800679714 /* Sources */,
 				B49089022CDB088800679714 /* Frameworks */,
@@ -98,13 +99,12 @@
 			);
 			dependencies = (
 			);
-			name = "TomskSoft SDK Demo";
+			name = "Video Effects SDK Demo";
 			packageProductDependencies = (
 				B40D5F1E2CDB2ECB00438CD7 /* TSVBPackage */,
-				B40D5F202CDB357300438CD7 /* TSVBPackage */,
 			);
-			productName = "TomskSoft SDK Demo";
-			productReference = B49089052CDB088800679714 /* TomskSoft SDK Demo.app */;
+			productName = "Video Effects SDK Demo";
+			productReference = B49089052CDB088800679714 /* Video Effects SDK Demo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -122,7 +122,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B49089002CDB088800679714 /* Build configuration list for PBXProject "TomskSoft SDK Demo" */;
+			buildConfigurationList = B49089002CDB088800679714 /* Build configuration list for PBXProject "Video Effects SDK Demo" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -138,7 +138,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B49089042CDB088800679714 /* TomskSoft SDK Demo */,
+				B49089042CDB088800679714 /* Video Effects SDK Demo */,
 			);
 		};
 /* End PBXProject section */
@@ -150,6 +150,7 @@
 			files = (
 				B49089152CDB088A00679714 /* LaunchScreen.storyboard in Resources */,
 				B49089342CDB26A200679714 /* background_image.jpg in Resources */,
+				B49089372CDB26A200679714 /* color_filter.cube in Resources */,
 				B49089122CDB088A00679714 /* Assets.xcassets in Resources */,
 				B49089102CDB088800679714 /* Main.storyboard in Resources */,
 			);
@@ -319,10 +320,9 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = SJGS55JN43;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "TomskSoftSDKDemo/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "TomskSoft SDK Demo";
+				INFOPLIST_FILE = "VideoEffectsSDKDemo/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Video Effects SDK Demo";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Captures cameras to show functionality of SDK";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -334,7 +334,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.tomsksoft.SDK-Demo-Swift.iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.effectssdk.VideoEffectsSDKDemo.Swift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -349,10 +349,9 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = SJGS55JN43;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "TomskSoftSDKDemo/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "TomskSoft SDK Demo";
+				INFOPLIST_FILE = "VideoEffectsSDKDemo/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Video Effects SDK Demo";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Captures cameras to show functionality of SDK";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -364,7 +363,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.tomsksoft.SDK-Demo-Swift.iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.effectssdk.VideoEffectsSDKDemo.Swift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -375,7 +374,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B49089002CDB088800679714 /* Build configuration list for PBXProject "TomskSoft SDK Demo" */ = {
+		B49089002CDB088800679714 /* Build configuration list for PBXProject "Video Effects SDK Demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B49089172CDB088A00679714 /* Debug */,
@@ -384,7 +383,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B49089192CDB088A00679714 /* Build configuration list for PBXNativeTarget "TomskSoft SDK Demo" */ = {
+		B49089192CDB088A00679714 /* Build configuration list for PBXNativeTarget "Video Effects SDK Demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B490891A2CDB088A00679714 /* Debug */,
@@ -401,18 +400,13 @@
 			repositoryURL = "https://github.com/EffectsSDK/swift-video-effects-sdk";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 2.2.3;
+				minimumVersion = 2.6.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
 		B40D5F1E2CDB2ECB00438CD7 /* TSVBPackage */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B40D5F1D2CDB2ECB00438CD7 /* XCRemoteSwiftPackageReference "swift-video-effects-sdk" */;
-			productName = TSVBPackage;
-		};
-		B40D5F202CDB357300438CD7 /* TSVBPackage */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = B40D5F1D2CDB2ECB00438CD7 /* XCRemoteSwiftPackageReference "swift-video-effects-sdk" */;
 			productName = TSVBPackage;
